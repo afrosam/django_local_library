@@ -20,7 +20,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cg#p$g+j9tax!#a3cup@1$8obt2_+&
 
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = True
-DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
+DEBUG = False
 
 SECURE_CONTENT_TYPE_NOSNIFF = True
 
@@ -34,7 +34,7 @@ CSRF_COOKIE_SECURE = True
 
 X_FRAME_OPTIONS = 'DENY'
 
-ALLOWED_HOSTS = ['thawing-tor-77652.herokuapp.com']
+ALLOWED_HOSTS = ['thawing-tor-77652.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -149,5 +149,3 @@ STATIC_URL = '/static/'
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-print('basedir is at ' + BASE_DIR)
