@@ -10,8 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
-import os
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
@@ -137,7 +135,7 @@ LOGIN_REDIRECT_URL = '/'
 # Heroku: Update database configuration from $DATABASE_URL.
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db_from_en
+DATABASES['default'].update(db_from_en)
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
@@ -151,3 +149,5 @@ STATIC_URL = '/static/'
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+print "base dir path", BASE_DIR
