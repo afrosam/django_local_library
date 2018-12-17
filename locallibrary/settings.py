@@ -34,7 +34,7 @@ CSRF_COOKIE_SECURE = True
 
 X_FRAME_OPTIONS = 'DENY'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['thawing-tor-77652.herokuapp.com']
 
 
 # Application definition
