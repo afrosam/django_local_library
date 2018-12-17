@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
-
+BASE_DIR = 'locallibrary'
 # SECURITY WARNING: keep the secret key used in production secret!
 #SECRET_KEY = 'vpe+123k4i#cb=+4b@4(g#rc-rzv=59zz-kd4k)_!1r=9otg7k'
 import os
@@ -135,7 +135,7 @@ LOGIN_REDIRECT_URL = '/'
 # Heroku: Update database configuration from $DATABASE_URL.
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db_from_en)
+DATABASES['default'].update(db_from_env)
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
